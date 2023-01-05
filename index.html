@@ -28,7 +28,27 @@
   <body>
 <div class="body-container">
 	
-        <form id="search-city">
+    
+          
+          <header>
+        <h1 id="city"></h1>
+		<h2 class="date"><em>Sunday 0:18</em></h2>
+        <h3 id="description"></h3>
+	
+		<section>
+		<i class="fa-solid fa-sun sunny-icon"></i>
+		
+        
+			<span class="current-temperature" id="temperature"></span
+			><span class="units">
+			<a href="#" id="fahrenheit" class="fahrenheit-knob">°F</a> | 
+			<a href="#" id="celsius" class="celsius-knob">°C</a>
+		    </span>
+            
+	
+		</section>
+    </header>
+<form id="search-city">
         <input type="text" placeholder="Enter a city" autofocus="on" id="input-city"/>
         <input
             type="submit"
@@ -43,30 +63,11 @@
           >
             Current
           </button>
-          
-          <header>
-        <h1 id="current-location">Kyiv</h1>
-		<h2 class="date"><em>Sunday 0:18</em></h2>
-	
-		<section>
-		<i class="fa-solid fa-sun sunny-icon"></i>
-		
-		<div class="float-left temperature current-temp">
-			<span class="current-temperature" id="temperature">63</span
-			><span class="units">
-			<a href="#" id="fahrenheit" class="fahrenheit-knob">°F</a> | 
-			<a href="#" id="celsius" class="celsius-knob">°C</a>
-		</span>
-		</div>
-	
-		</section>
-    </header>
-
     
-    <div class="indicators">
-        <div>Wind: 7 km/h</div>
-      <div>Humidity: 68%</div>
-  </div>
+          <div class="indicators">
+			<div>Wind: <span id="wind"></span> km/h</div>
+		  <div>Humidity: <span id="humidity"></span>%</div>
+	  </div>
 
   <div class="container">
     <div class="row row-cols-5">
