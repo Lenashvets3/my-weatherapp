@@ -4,9 +4,11 @@ h1 {
   font-size: 50px;
 }
 
-h2 {
+h2,
+h3,
+#date {
   font-family: "Roboto Serif", serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 form {
@@ -85,4 +87,24 @@ div.col {
 }
 .creator-link:hover {
   color: #4bbdbd;
+}
+
+a.activ {
+  color: rgb(20, 19, 19);
+  cursor: default;
+  text-decoration: none;
+}
+
+.units .activ:hover {
+  text-decoration: underline;
+}
+
+.units .fahrenheit-knob:hover {
+  text-decoration: underline;
+}
+
+a.fahrenheit-knob {
+  color: rgb(67, 28, 173);
+  cursor: default;
+  text-decoration: none;
 }
