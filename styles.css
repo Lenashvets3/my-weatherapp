@@ -22,8 +22,10 @@ form {
   font-size: 50px;
 }
 
-#current-temperature {
-  font-size: 30px;
+span.current-temperature {
+  position: relative;
+  top: 18px;
+  font-size: 40px;
 }
 
 .indicators {
